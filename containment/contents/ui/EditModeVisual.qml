@@ -25,15 +25,15 @@ import QtGraphicalEffects 1.0
 
 Image{
     id: editVisual
-    width: root.isHorizontal ? parent.width : visibilityManager.thicknessNormal
-    height: root.isVertical ? parent.height : visibilityManager.thicknessNormal
+    width: root.isHorizontal ? parent.width : visibilityManager.thicknessNormalOriginalValue
+    height: root.isVertical ? parent.height : visibilityManager.thicknessNormalOriginalValue
 
     fillMode: Image.Tile
     source: "../icons/blueprint.jpg"
     opacity: 0
 
     property int speed: root.durationTime*4*units.longDuration
-    property int thickness: visibilityManager.thicknessNormal + shadowSize
+    property int thickness: visibilityManager.thicknessNormalOriginalValue + shadowSize
     property int rootThickness: visibilityManager.thicknessZoomOriginal
     property int shadowSize : Math.ceil(root.iconSize / 5)
 
