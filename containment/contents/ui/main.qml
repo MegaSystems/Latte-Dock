@@ -42,7 +42,7 @@ DragDrop.DropArea {
     ////
 
     ////BEGIN properties
-    property bool debugMode: false
+    property bool debugMode: true
 
     property bool automaticSize: plasmoid.configuration.automaticIconSize
     property bool confirmedDragEntered: false
